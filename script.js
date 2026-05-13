@@ -62,8 +62,8 @@ function showSituation(type) {
       text: "Puedes solicitar la lactancia acumulada en 15 días laborables o disfrutarla de forma diaria hasta que el bebé cumpla 9 meses. Coordina la forma de disfrute con People."
     },
     seguro: {
-      title: "🏥 Quiero incluir al bebé en el seguro",
-      text: "Solicita el alta del bebé en los primeros 7 días desde el nacimiento escribiendo a seguromedicoplainconcepts@isalud.com para evitar carencias."
+      title: "🎁 Quiero ver Baby Benefits",
+      text: "En Baby Benefits encontrarás el Baby Basket, el alta del bebé en el seguro de salud, la retribución flexible de Cobee para guardería y el modelo 145 para actualizar tu situación familiar."
     },
     vuelta: {
       title: "🌱 Estoy preparando la vuelta",

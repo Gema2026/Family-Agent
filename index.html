@@ -25,6 +25,7 @@
         <a href="#planner">Planificador</a>
         <a href="#pagos">Pagos</a>
         <a href="#docs">Documentos</a>
+        <a href="#baby-benefits">Baby Benefits</a>
         <a href="#faq">FAQ</a>
       </nav>
     </div>
@@ -38,7 +39,7 @@
         <p>
           Un espacio claro, cercano y divertido para saber qué pasos seguir antes y después del nacimiento,
           cómo organizar el permiso, qué documentación enviar, quién paga durante cada momento y qué hacer
-          con lactancia, vacaciones y seguro médico.
+          con lactancia, vacaciones y Baby Benefits.
         </p>
         <div class="hero-actions">
           <a href="#situacion" class="btn primary">Elegir mi situación</a>
@@ -79,7 +80,7 @@
         <button onclick="showSituation('semanas')">🗓️ Quiero organizar mis semanas</button>
         <button onclick="showSituation('pagos')">💸 Quiero saber quién me paga</button>
         <button onclick="showSituation('lactancia')">🍼 Quiero pedir lactancia</button>
-        <button onclick="showSituation('seguro')">🏥 Quiero incluir al bebé en el seguro</button>
+        <button onclick="showSituation('seguro')">🎁 Quiero ver Baby Benefits</button>
         <button onclick="showSituation('vuelta')">🌱 Estoy preparando la vuelta</button>
       </div>
 
@@ -91,21 +92,25 @@
         <div class="icon">🎉</div>
         <h3>1. Enhorabuena</h3>
         <p>Lo primero: ¡felicidades! Desde People te acompañamos para que el proceso sea fácil y claro.</p>
+        <a href="#que-hago-cuando" class="btn secondary card-btn">Ver qué hago y cuándo</a>
       </article>
       <article class="quick-card">
         <div class="icon">🗓️</div>
         <h3>2. Organiza semanas</h3>
         <p>Piensa cómo quieres distribuir las semanas voluntarias y revisa el preaviso de 15 días.</p>
+        <a href="#planner" class="btn secondary card-btn">Ir a la calculadora</a>
       </article>
       <article class="quick-card">
         <div class="icon">📎</div>
         <h3>3. Envía documentación</h3>
         <p>Documento hospitalario, solicitud firmada y certificado del Registro Civil cuando esté disponible.</p>
+        <a href="#docs" class="btn secondary card-btn">Ver documentación necesaria</a>
       </article>
       <article class="quick-card">
-        <div class="icon">🏥</div>
-        <h3>4. Seguro médico</h3>
-        <p>Si quieres incluir al bebé, solicita el alta en los primeros 7 días desde el nacimiento.</p>
+        <div class="icon">🎁</div>
+        <h3>4. Baby Benefits</h3>
+        <p>Consulta el “pan debajo del brazo” que viene con vuestro bebé.</p>
+        <a href="#baby-benefits" class="btn secondary card-btn">Ver Baby Benefits</a>
       </article>
     </section>
 
@@ -193,7 +198,7 @@
       </div>
     </section>
 
-    <section class="wrap flow-section">
+    <section class="wrap flow-section" id="que-hago-cuando">
       <div class="section-head">
         <span class="eyebrow">Paso a paso</span>
         <h2>Qué hago y cuándo</h2>
@@ -287,18 +292,59 @@
       </div>
     </section>
 
-    <section class="wrap insurance">
-      <div class="insurance-card">
-        <div>
-          <span class="eyebrow">Seguro de salud</span>
-          <h2>Alta del bebé en el seguro médico</h2>
+    <section class="wrap baby-benefits" id="baby-benefits">
+      <div class="section-head">
+        <span class="eyebrow">Baby Benefits</span>
+        <h2>El pan debajo del brazo</h2>
+        <p>En Plain Concepts queremos celebrar este momento contigo.</p>
+        <p>
+          A continuación, te contamos los beneficios que puedes disfrutar con la llegada del nuevo miembro de tu familia,
+          además del amor infinito que seguro vas a sentir.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <article class="benefit-card highlight">
+          <div class="benefit-icon">🎁</div>
+          <h3>Baby Basket</h3>
+          <p>
+            Hemos preparado tu Baby Basket. Solo necesitamos que confirmes la dirección de entrega y una fecha en la que
+            no interrumpamos el sueño del bebé.
+          </p>
+          <a class="btn primary" href="mailto:people@plainconcepts.com?subject=Baby Basket - Confirmación de dirección de entrega">Solicitar Baby Basket</a>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">🏥</div>
+          <h3>Seguro de salud</h3>
           <p>
             Si quieres dar de alta a tu bebé como beneficiario en tu seguro de salud, debes solicitarlo en los primeros
             7 días desde el nacimiento para que pueda darse de alta sin carencias.
           </p>
-          <a class="email-link" href="mailto:seguromedicoplainconcepts@isalud.com">seguromedicoplainconcepts@isalud.com</a>
-        </div>
-        <div class="bubble">🧸</div>
+          <a class="btn secondary" href="mailto:seguromedicoplainconcepts@isalud.com?subject=Alta bebé seguro de salud">Solicitar alta en seguro</a>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">🏫</div>
+          <h3>Cobee guardería</h3>
+          <p>
+            Cuando llegue el momento de guardería, recuerda que en Plain Concepts puedes utilizar la retribución flexible
+            de Cobee para gastos de guardería. Puede ayudarte a optimizar tu salario neto por su tratamiento fiscal favorable
+            en IRPF, dentro de los límites y requisitos legalmente aplicables.
+          </p>
+          <a class="btn secondary" href="mailto:people@plainconcepts.com?subject=Consulta Cobee guardería">Consultar Cobee guardería</a>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">📄</div>
+          <h3>Modelo 145</h3>
+          <p>
+            Actualiza tu modelo 145 para incluir al bebé y comunicar tu nueva situación familiar. Así podremos ajustar
+            correctamente tu retención de IRPF y podrás aprovechar los beneficios fiscales que correspondan.
+          </p>
+          <a class="btn secondary" href="https://sede.agenciatributaria.gob.es/static_files/Sede/Procedimiento_ayuda/G603/mod145_es_es.pdf" target="_blank" rel="noopener noreferrer">Descargar modelo 145 editable</a>
+          <p class="small-note">Una vez cumplimentado y firmado, envíalo a RRHH.</p>
+        </article>
       </div>
     </section>
 
