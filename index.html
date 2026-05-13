@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agente Virtual Maternidad | Plain Concepts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <img src='logo-plain-concepts.png' alt='Plain Concepts' class='plain-logo' />
+        <div>
+          <div class="brand-name">Agente Virtual Maternidad</div>
+          <div class="brand-sub">Guía virtual para maternidad, paternidad y permisos familiares</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#situacion">Situación</a>
+        <a href="#permisos">Permiso</a>
+        <a href="#planner">Planificador</a>
+        <a href="#pagos">Pagos</a>
+        <a href="#docs">Documentos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">People · Plain Concepts</div>
+        <h1>¡Viene un bebé! Respira: aquí tienes el mapa 🍼</h1>
+        <p>
+          Un espacio claro, cercano y divertido para saber qué pasos seguir antes y después del nacimiento,
+          cómo organizar el permiso, qué documentación enviar, quién paga durante cada momento y qué hacer
+          con lactancia, vacaciones y seguro médico.
+        </p>
+        <div class="hero-actions">
+          <a href="#situacion" class="btn primary">Elegir mi situación</a>
+          <a href="#planner" class="btn secondary">Calcular mis semanas</a>
+        </div>
+        <div class="notice">
+          <strong>Nota importante:</strong> esta guía es informativa y está pensada para ayudarte a organizarte.
+          Para casos especiales, cambios normativos o dudas sobre tu caso concreto, contacta con People.
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <span class="card-kicker">Permiso por nacimiento y cuidado del menor</span>
+        <div class="weeks">
+          <strong>19</strong>
+          <span>semanas</span>
+        </div>
+        <p>Distribuidas en 6 obligatorias, 11 voluntarias hasta los 12 meses y 2 voluntarias legales hasta los 8 años.</p>
+        <div class="pill-row">
+          <span>👶 Nacimiento</span>
+          <span>📄 Documentos</span>
+          <span>💸 Pagos</span>
+          <span>🗓️ Planificación</span>
+          <span>💌 People</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap selector" id="situacion">
+      <div class="section-head">
+        <span class="eyebrow">Elige tu situación</span>
+        <h2>Encuentra rápido lo que necesitas</h2>
+        <p>No hace falta leerse todo de golpe. Elige tu caso y te mostramos el resumen práctico.</p>
+      </div>
+
+      <div class="selector-grid">
+        <button onclick="showSituation('nacimiento')">👶 Acaba de nacer mi bebé</button>
+        <button onclick="showSituation('semanas')">🗓️ Quiero organizar mis semanas</button>
+        <button onclick="showSituation('pagos')">💸 Quiero saber quién me paga</button>
+        <button onclick="showSituation('lactancia')">🍼 Quiero pedir lactancia</button>
+        <button onclick="showSituation('seguro')">🏥 Quiero incluir al bebé en el seguro</button>
+        <button onclick="showSituation('vuelta')">🌱 Estoy preparando la vuelta</button>
+      </div>
+
+      <div id="situationResult" class="situation-result hidden"></div>
+    </section>
+
+    <section class="wrap quick-cards">
+      <article class="quick-card">
+        <div class="icon">🎉</div>
+        <h3>1. Enhorabuena</h3>
+        <p>Lo primero: ¡felicidades! Desde People te acompañamos para que el proceso sea fácil y claro.</p>
+      </article>
+      <article class="quick-card">
+        <div class="icon">🗓️</div>
+        <h3>2. Organiza semanas</h3>
+        <p>Piensa cómo quieres distribuir las semanas voluntarias y revisa el preaviso de 15 días.</p>
+      </article>
+      <article class="quick-card">
+        <div class="icon">📎</div>
+        <h3>3. Envía documentación</h3>
+        <p>Documento hospitalario, solicitud firmada y certificado del Registro Civil cuando esté disponible.</p>
+      </article>
+      <article class="quick-card">
+        <div class="icon">🏥</div>
+        <h3>4. Seguro médico</h3>
+        <p>Si quieres incluir al bebé, solicita el alta en los primeros 7 días desde el nacimiento.</p>
+      </article>
+    </section>
+
+    <section class="band" id="permisos">
+      <div class="wrap band-inner">
+        <div>
+          <span class="eyebrow light">Distribución del permiso</span>
+          <h2>19 semanas, explicadas sin líos</h2>
+        </div>
+        <div class="week-grid">
+          <div class="week-card">
+            <strong>6</strong>
+            <span>obligatorias</span>
+            <p>Ininterrumpidas, a jornada completa e inmediatamente posteriores al nacimiento.</p>
+          </div>
+          <div class="week-card">
+            <strong>11</strong>
+            <span>voluntarias</span>
+            <p>Continuadas o interrumpidas, por semanas, hasta que el bebé cumpla 12 meses.</p>
+          </div>
+          <div class="week-card">
+            <strong>2</strong>
+            <span>adicionales legales</span>
+            <p>Voluntarias, por semanas, acumuladas o interrumpidas, hasta que el menor cumpla 8 años.</p>
+          </div>
+        </div>
+        <div class="band-note">
+          Esta guía recoge únicamente las semanas legalmente aplicables y no incluye semanas adicionales de empresa distintas de las previstas en la normativa.
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap planner" id="planner">
+      <div class="section-head">
+        <span class="eyebrow">Planificador</span>
+        <h2>Calcula tus primeras 6 semanas</h2>
+        <p>
+          Introduce la fecha de nacimiento prevista o real y te mostramos el primer bloque obligatorio.
+          Las semanas se computan por semanas completas e incluyen el día de nacimiento.
+        </p>
+      </div>
+
+      <div class="planner-card">
+        <label for="birthDate">Fecha de nacimiento</label>
+        <div class="planner-row">
+          <input type="date" id="birthDate" />
+          <button class="btn primary" onclick="calculateWeeks()">Calcular</button>
+        </div>
+        <div id="plannerResult" class="planner-result hidden"></div>
+      </div>
+    </section>
+
+    <section class="wrap payments" id="pagos">
+      <div class="section-head">
+        <span class="eyebrow">Pagos durante el permiso</span>
+        <h2>¿Quién paga y cuánto se cobra?</h2>
+        <p>Esta es una de las dudas más habituales. Aquí tienes la explicación sencilla.</p>
+      </div>
+
+      <div class="payment-grid">
+        <article class="payment-card dark">
+          <div class="payment-icon">🏛️</div>
+          <h3>Durante el permiso por nacimiento</h3>
+          <p>Durante la suspensión del contrato por nacimiento y cuidado del menor, la prestación la abona el Instituto Nacional de la Seguridad Social, una vez presentada la solicitud correspondiente.</p>
+        </article>
+        <article class="payment-card">
+          <div class="payment-icon">📊</div>
+          <h3>¿Cuánto se cobra?</h3>
+          <p>La prestación se calcula sobre la base reguladora. Esta información aparecerá en el certificado de empresa que People te facilitará para solicitar la prestación.</p>
+        </article>
+        <article class="payment-card">
+          <div class="payment-icon">💼</div>
+          <h3>¿Y la empresa?</h3>
+          <p>La empresa mantiene las obligaciones de cotización empresarial. Si tu salario supera el tope máximo de base de cotización, People podrá revisar tu caso conforme a la política vigente.</p>
+        </article>
+        <article class="payment-card">
+          <div class="payment-icon">📅</div>
+          <h3>¿Cuándo paga el INSS?</h3>
+          <p>El INSS suele realizar los pagos a final de mes. Si hubiera alguna incidencia con el pago, deberá revisarse directamente con el organismo.</p>
+        </article>
+      </div>
+
+      <div class="notice">
+        <strong>Tip People:</strong> cuando recibas el certificado de empresa, revísalo y úsalo para solicitar la prestación ante la Seguridad Social.
+      </div>
+    </section>
+
+    <section class="wrap flow-section">
+      <div class="section-head">
+        <span class="eyebrow">Paso a paso</span>
+        <h2>Qué hago y cuándo</h2>
+      </div>
+
+      <div class="flow">
+        <div class="flow-item">
+          <div class="dot">1</div>
+          <div>
+            <h3>Antes del nacimiento</h3>
+            <p>Si ya sabes fechas aproximadas, puedes hablar con People para organizar el permiso y resolver dudas.</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="dot">2</div>
+          <div>
+            <h3>Cuando nazca el bebé</h3>
+            <p>Envía a People cualquier documento del hospital que certifique el nacimiento para iniciar la gestión.</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="dot">3</div>
+          <div>
+            <h3>Solicitud del permiso</h3>
+            <p>Envía el documento de solicitud cumplimentado y firmado con las fechas de disfrute.</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="dot">4</div>
+          <div>
+            <h3>Certificado de empresa</h3>
+            <p>People tramitará y enviará el certificado de empresa para que puedas solicitar la prestación ante la Seguridad Social.</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="dot">5</div>
+          <div>
+            <h3>Semanas restantes</h3>
+            <p>Para disfrutar semanas posteriores, preavisa con al menos 15 días y envía nueva solicitud con las fechas elegidas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap docs" id="docs">
+      <div class="section-head">
+        <span class="eyebrow">Checklist</span>
+        <h2>Documentación que necesitamos</h2>
+      </div>
+
+      <div class="checklist">
+        <label><input type="checkbox"> Documento del hospital que certifique el nacimiento.</label>
+        <label><input type="checkbox"> Solicitud de disfrute del permiso cumplimentada y firmada.</label>
+        <label><input type="checkbox"> Fechas de disfrute del permiso indicadas en la solicitud.</label>
+        <label><input type="checkbox"> Certificado de nacimiento del Registro Civil cuando sea emitido.</label>
+        <label><input type="checkbox"> Solicitud posterior de semanas restantes, si se disfrutan de forma interrumpida.</label>
+        <label><input type="checkbox"> Modelo 145 actualizado con la inclusión del nuevo descendiente, si procede.</label>
+      </div>
+    </section>
+
+    <section class="wrap lactancia">
+      <div class="lactancia-card">
+        <div>
+          <span class="eyebrow">Lactancia</span>
+          <h2>También tienes permiso de lactancia</h2>
+          <p>
+            Puede disfrutarse inmediatamente después de que finalice una de las partes del permiso.
+            Puede disfrutarse acumulado en 15 días laborables o de forma diaria: 1 hora al día,
+            o dos medias horas al inicio y al final de la jornada, hasta que el bebé cumpla 9 meses.
+          </p>
+          <p>
+            Durante el permiso de lactancia no interviene el INSS: es un permiso retribuido por la empresa
+            al 100% de la retribución bruta que correspondería de estar prestando servicios normalmente.
+          </p>
+        </div>
+        <div class="bubble">🍼</div>
+      </div>
+    </section>
+
+    <section class="wrap holidays">
+      <div class="holidays-card">
+        <div>
+          <span class="eyebrow">Vacaciones</span>
+          <h2>¿Qué pasa con mis vacaciones?</h2>
+          <p>
+            Si el permiso por nacimiento, cuidado del menor o lactancia coincide con vacaciones pendientes,
+            podrás coordinarlas con tu manager y People para disfrutarlas a la vuelta, incluso si ya ha terminado el año natural.
+          </p>
+        </div>
+        <div class="bubble">🌴</div>
+      </div>
+    </section>
+
+    <section class="wrap insurance">
+      <div class="insurance-card">
+        <div>
+          <span class="eyebrow">Seguro de salud</span>
+          <h2>Alta del bebé en el seguro médico</h2>
+          <p>
+            Si quieres dar de alta a tu bebé como beneficiario en tu seguro de salud, debes solicitarlo en los primeros
+            7 días desde el nacimiento para que pueda darse de alta sin carencias.
+          </p>
+          <a class="email-link" href="mailto:seguromedicoplainconcepts@isalud.com">seguromedicoplainconcepts@isalud.com</a>
+        </div>
+        <div class="bubble">🧸</div>
+      </div>
+    </section>
+
+    <section class="wrap email-helper">
+      <div class="email-card">
+        <div>
+          <span class="eyebrow">Email rápido</span>
+          <h2>Copia una plantilla para escribir a People</h2>
+          <p>Rellena los huecos antes de enviarla.</p>
+        </div>
+        <button class="btn primary" onclick="copyEmailTemplate()">Copiar plantilla</button>
+      </div>
+      <textarea id="emailTemplate" class="email-template" readonly>Hola People,
+
+Os informo del nacimiento de mi hijo/a el día __/__/____.
+
+Adjunto:
+- Documento del hospital que acredita el nacimiento.
+- Solicitud de disfrute del permiso cumplimentada y firmada.
+
+Las fechas de disfrute que solicito son:
+- Primer bloque obligatorio: del __/__/____ al __/__/____.
+- Semanas voluntarias, si procede: __________________________.
+
+Cuando tenga disponible el certificado de nacimiento del Registro Civil, os lo haré llegar.
+
+Gracias.</textarea>
+      <p id="copyStatus" class="copy-status"></p>
+    </section>
+
+    <section class="wrap faq" id="faq">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Preguntas rápidas</h2>
+      </div>
+
+      <div class="faq-grid">
+        <details><summary>¿Las 6 primeras semanas son obligatorias?</summary><p>Sí. Deben disfrutarse inmediatamente desde el nacimiento, de forma ininterrumpida y a jornada completa.</p></details>
+        <details><summary>¿Puedo partir las semanas voluntarias?</summary><p>Sí, las 11 semanas voluntarias pueden disfrutarse de forma continuada o interrumpida, en periodos semanales, hasta que el hijo/a cumpla 12 meses.</p></details>
+        <details><summary>¿Con cuánto tiempo tengo que avisar?</summary><p>El disfrute de cada periodo semanal o acumulación de periodos debe comunicarse a la empresa con una antelación mínima de 15 días.</p></details>
+        <details><summary>¿Quién me paga durante el permiso por nacimiento?</summary><p>Durante la suspensión del contrato, la prestación la abona el INSS. People te facilitará el certificado de empresa para solicitarla.</p></details>
+        <details><summary>¿Y durante la lactancia?</summary><p>Durante el permiso de lactancia no interviene el INSS. Es un permiso retribuido por la empresa.</p></details>
+        <details><summary>¿Puedo disfrutarlo a jornada parcial?</summary><p>El disfrute a jornada parcial requiere acuerdo entre la empresa y la persona trabajadora.</p></details>
+        <details><summary>¿Qué pasa con las 2 semanas adicionales legales?</summary><p>Pueden disfrutarse en periodos semanales, de forma acumulada o interrumpida, hasta que el menor cumpla 8 años.</p></details>
+        <details><summary>¿Qué hago si quiero organizarlo con People?</summary><p>Escríbenos y organizamos una llamada para revisar fechas, documentación y dudas concretas.</p></details>
+      </div>
+    </section>
+
+    <section class="wrap cta">
+      <h2>¿Dudas? People te acompaña 💙</h2>
+      <p>Si quieres organizar fechas, confirmar documentación o resolver un caso especial, escríbenos y lo vemos contigo.</p>
+      <a class="btn primary" href="mailto:people@plainconcepts.com">Contactar con People</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Agente Virtual Maternidad</strong>
+        <p>Guía interna informativa para acompañar maternidad, paternidad, nacimiento y cuidado del menor.</p>
+      </div>
+      <div class="footer-tags">
+        <span>People</span><span>Familia</span><span>Permisos</span><span>Conciliación</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
