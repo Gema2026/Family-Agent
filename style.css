@@ -157,3 +157,34 @@ summary{font-weight:900;cursor:pointer}
   .planner-row,.hero-actions,.email-card{flex-direction:column;align-items:stretch}
   .btn,input[type=date]{width:100%}
 }
+
+.language-switch{
+  display:flex;
+  gap:6px;
+  align-items:center;
+  padding:4px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:white;
+  box-shadow:0 8px 18px rgba(15,23,42,.08);
+}
+.language-switch a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:38px;
+  min-height:32px;
+  padding:6px 10px;
+  border-radius:999px;
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:900;
+  font-size:13px;
+}
+.language-switch a.active{
+  background:var(--ink);
+  color:white;
+}
+@media(max-width:720px){
+  .language-switch{margin-top:8px}
+}

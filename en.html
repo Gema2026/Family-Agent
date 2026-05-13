@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Leave Virtual Agent | Plain Concepts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <img src='logo-plain-concepts.png' alt='Plain Concepts' class='plain-logo' />
+        <div>
+          <div class="brand-name">Family Leave Virtual Agent</div>
+          <div class="brand-sub">Virtual guide for maternity, paternity and family leave</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#situacion">Situation</a>
+        <a href="#permisos">Leave</a>
+        <a href="#planner">Planner</a>
+        <a href="#pagos">Payments</a>
+        <a href="#docs">Documents</a>
+        <a href="#baby-benefits">Baby Benefits</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="language-switch" aria-label="Language selector">
+        <a href="index.html">ES</a>
+        <a class="active" href="en.html">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">People · Plain Concepts</div>
+        <h1>A baby is coming! Breathe: here is your roadmap 🍼</h1>
+        <p>
+          A clear, friendly and practical space to understand what steps to follow before and after the birth,
+          how to organise your leave, what documentation to send, who pays at each stage and what to do
+          about breastfeeding leave, holidays and Baby Benefits.
+        </p>
+        <div class="hero-actions">
+          <a href="#situacion" class="btn primary">Choose my situation</a>
+          <a href="#planner" class="btn secondary">Calculate my weeks</a>
+        </div>
+        <div class="notice">
+          <strong>Important note:</strong> this guide is for information purposes and is designed to help you get organised.
+          For special cases, legal changes or questions about your specific situation, contact People.
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <span class="card-kicker">Birth and childcare leave</span>
+        <div class="weeks">
+          <strong>19</strong>
+          <span>weeks</span>
+        </div>
+        <p>Split into 6 mandatory weeks, 11 voluntary weeks up to 12 months and 2 additional legal voluntary weeks up to the child’s 8th birthday.</p>
+        <div class="pill-row">
+          <span>👶 Birth</span>
+          <span>📄 Documents</span>
+          <span>💸 Payments</span>
+          <span>🗓️ Planning</span>
+          <span>💌 People</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap selector" id="situacion">
+      <div class="section-head">
+        <span class="eyebrow">Choose your situation</span>
+        <h2>Find what you need quickly</h2>
+        <p>No need to read everything at once. Choose your case and we will show you the practical summary.</p>
+      </div>
+
+      <div class="selector-grid">
+        <button onclick="showSituation('nacimiento')">👶 My baby has just been born</button>
+        <button onclick="showSituation('semanas')">🗓️ I want to organise my weeks</button>
+        <button onclick="showSituation('pagos')">💸 I want to know who pays me</button>
+        <button onclick="showSituation('lactancia')">🍼 I want to request breastfeeding leave</button>
+        <button onclick="showSituation('seguro')">🎁 I want to see Baby Benefits</button>
+        <button onclick="showSituation('vuelta')">🌱 I am preparing my return</button>
+      </div>
+
+      <div id="situationResult" class="situation-result hidden"></div>
+    </section>
+
+    <section class="wrap quick-cards">
+      <article class="quick-card">
+        <div class="icon">🎉</div>
+        <h3>1. Congratulations</h3>
+        <p>First things first: congratulations! People will support you so the process is easy and clear.</p>
+        <a href="#que-hago-cuando" class="btn secondary card-btn">See what to do and when</a>
+      </article>
+      <article class="quick-card">
+        <div class="icon">🗓️</div>
+        <h3>2. Organise your weeks</h3>
+        <p>Think about how you want to distribute the voluntary weeks and remember the 15-day notice period.</p>
+        <a href="#planner" class="btn secondary card-btn">Go to the calculator</a>
+      </article>
+      <article class="quick-card">
+        <div class="icon">📎</div>
+        <h3>3. Send documentation</h3>
+        <p>Hospital document, signed request form and Civil Registry certificate when available.</p>
+        <a href="#docs" class="btn secondary card-btn">See required documentation</a>
+      </article>
+      <article class="quick-card">
+        <div class="icon">🎁</div>
+        <h3>4. Baby Benefits</h3>
+        <p>Check the “bread under the arm” that comes with your baby.</p>
+        <a href="#baby-benefits" class="btn secondary card-btn">See Baby Benefits</a>
+      </article>
+    </section>
+
+    <section class="band" id="permisos">
+      <div class="wrap band-inner">
+        <div>
+          <span class="eyebrow light">Leave distribution</span>
+          <h2>19 weeks, explained simply</h2>
+        </div>
+        <div class="week-grid">
+          <div class="week-card">
+            <strong>6</strong>
+            <span>mandatory</span>
+            <p>Uninterrupted, full-time and immediately after the birth.</p>
+          </div>
+          <div class="week-card">
+            <strong>11</strong>
+            <span>voluntary</span>
+            <p>Continuous or split into weekly periods, until the baby turns 12 months old.</p>
+          </div>
+          <div class="week-card">
+            <strong>2</strong>
+            <span>additional legal weeks</span>
+            <p>Voluntary, in weekly periods, taken together or separately, until the child turns 8.</p>
+          </div>
+        </div>
+        <div class="band-note">
+          This guide only includes the legally applicable weeks and does not include any additional company weeks beyond those provided by law.
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap planner" id="planner">
+      <div class="section-head">
+        <span class="eyebrow">Planner</span>
+        <h2>Calculate your first 6 weeks</h2>
+        <p>
+          Enter the expected or actual birth date and we will show you the first mandatory block.
+          Weeks are counted as full weeks and include the day of birth.
+        </p>
+      </div>
+
+      <div class="planner-card">
+        <label for="birthDate">Birth date</label>
+        <div class="planner-row">
+          <input type="date" id="birthDate" />
+          <button class="btn primary" onclick="calculateWeeks()">Calculate</button>
+        </div>
+        <div id="plannerResult" class="planner-result hidden"></div>
+      </div>
+    </section>
+
+    <section class="wrap payments" id="pagos">
+      <div class="section-head">
+        <span class="eyebrow">Payments during leave</span>
+        <h2>Who pays and how much will I receive?</h2>
+        <p>This is one of the most common questions. Here is the simple explanation.</p>
+      </div>
+
+      <div class="payment-grid">
+        <article class="payment-card dark">
+          <div class="payment-icon">🏛️</div>
+          <h3>During birth leave</h3>
+          <p>During the suspension of the employment contract for birth and childcare leave, the benefit is paid by the Spanish Social Security Institute once the relevant application has been submitted.</p>
+        </article>
+        <article class="payment-card">
+          <div class="payment-icon">📊</div>
+          <h3>How much will I receive?</h3>
+          <p>The benefit is calculated based on the regulatory base. This information will appear in the company certificate that People will provide so you can apply for the benefit.</p>
+        </article>
+        <article class="payment-card">
+          <div class="payment-icon">💼</div>
+          <h3>And the company?</h3>
+          <p>The company maintains its employer social security contribution obligations. If your salary exceeds the maximum contribution base, People can review your case according to the applicable policy.</p>
+        </article>
+        <article class="payment-card">
+          <div class="payment-icon">📅</div>
+          <h3>When does the INSS pay?</h3>
+          <p>The INSS usually makes payments at the end of the month. Any payment incident should be reviewed directly with the authority.</p>
+        </article>
+      </div>
+
+      <div class="notice">
+        <strong>People tip:</strong> when you receive the company certificate, review it and use it to apply for the benefit with Social Security.
+      </div>
+    </section>
+
+    <section class="wrap flow-section" id="que-hago-cuando">
+      <div class="section-head">
+        <span class="eyebrow">Step by step</span>
+        <h2>What to do and when</h2>
+      </div>
+
+      <div class="flow">
+        <div class="flow-item">
+          <div class="dot">1</div>
+          <div>
+            <h3>Before the birth</h3>
+            <p>If you already know approximate dates, you can speak with People to organise the leave and resolve any questions.</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="dot">2</div>
+          <div>
+            <h3>When the baby is born</h3>
+            <p>Send People any hospital document certifying the birth so the process can start. It is important that the birth date is correct to avoid delays in processing the leave.</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="dot">3</div>
+          <div>
+            <h3>Leave request</h3>
+            <p>Send the completed and signed request form with the dates you want to take.</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="dot">4</div>
+          <div>
+            <h3>Company certificate</h3>
+            <p>People will process and send the company certificate so you can apply for the benefit with Social Security.</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="dot">5</div>
+          <div>
+            <h3>Remaining weeks</h3>
+            <p>To take later weeks, give at least 15 days’ notice and send a new request with the chosen dates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap docs" id="docs">
+      <div class="section-head">
+        <span class="eyebrow">Checklist</span>
+        <h2>Documentation we need</h2>
+      </div>
+
+      <div class="checklist">
+        <label><input type="checkbox"> Hospital document certifying the birth.</label>
+        <label><input type="checkbox"> Completed and signed leave request form.</label>
+        <label><input type="checkbox"> Leave dates indicated in the request.</label>
+        <label><input type="checkbox"> Civil Registry birth certificate when issued.</label>
+        <label><input type="checkbox"> Later request for remaining weeks, if taken in split periods.</label>
+        <label><input type="checkbox"> Updated Modelo 145 including the new child, where applicable.</label>
+      </div>
+    </section>
+
+    <section class="wrap lactancia">
+      <div class="lactancia-card">
+        <div>
+          <span class="eyebrow">Lactancia</span>
+          <h2>You also have breastfeeding leave</h2>
+          <p>
+            It can be taken immediately after one of the parts of the leave ends.
+            It can be taken as 15 working days in one block or daily: 1 hour per day,
+            or two half-hour periods at the start and end of the working day, until the baby turns 9 months old.
+          </p>
+          <p>
+            During breastfeeding leave, the INSS does not intervene: it is paid by the company
+            at 100% of the gross remuneration that would apply if you were working normally.
+          </p>
+        </div>
+        <div class="bubble">🍼</div>
+      </div>
+    </section>
+
+    <section class="wrap holidays">
+      <div class="holidays-card">
+        <div>
+          <span class="eyebrow">Vacaciones</span>
+          <h2>What happens to my holidays?</h2>
+          <p>
+            If birth, childcare or breastfeeding leave overlaps with pending holidays,
+            you can coordinate them with your manager and People to take them when you return, even if the calendar year has already ended.
+          </p>
+        </div>
+        <div class="bubble">🌴</div>
+      </div>
+    </section>
+
+    <section class="wrap baby-benefits" id="baby-benefits">
+      <div class="section-head">
+        <span class="eyebrow">Baby Benefits</span>
+        <h2>The “bread under the arm”</h2>
+        <p>At Plain Concepts, we want to celebrate this moment with you.</p>
+        <p>
+          Below, we explain the benefits you can enjoy with the arrival of the newest member of your family,
+          in addition to the infinite love you will surely feel.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <article class="benefit-card highlight">
+          <div class="benefit-icon">🎁</div>
+          <h3>Baby Basket</h3>
+          <p>
+            We have prepared your Baby Basket. We just need you to confirm the delivery address and a date when
+            we will not interrupt the baby’s sleep.
+          </p>
+          <a class="btn primary" href="mailto:people@plainconcepts.com?subject=Baby Basket - Confirmación de dirección de entrega">Request Baby Basket</a>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">🏥</div>
+          <h3>Health insurance</h3>
+          <p>
+            If you want to add your baby as a beneficiary on your health insurance, you must request it within the first
+            7 days after birth so the baby can be added without waiting periods.
+          </p>
+          <a class="btn secondary" href="mailto:seguromedicoplainconcepts@isalud.com?subject=Alta bebé seguro de salud">Request insurance enrolment</a>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">🏫</div>
+          <h3>Cobee nursery benefit</h3>
+          <p>
+            When nursery time arrives, remember that at Plain Concepts you can use Cobee flexible compensation
+            for nursery expenses. It may help optimise your net salary thanks to its favourable personal income tax treatment,
+            within the legally applicable limits and requirements.
+          </p>
+          <a class="btn secondary" href="mailto:people@plainconcepts.com?subject=Consulta Cobee nursery benefit">Consultar Cobee nursery benefit</a>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">📄</div>
+          <h3>Modelo 145</h3>
+          <p>
+            Update your Modelo 145 to include the baby and communicate your new family situation. This allows us to adjust
+            your personal income tax withholding correctly and you can benefit from the applicable tax advantages.
+          </p>
+          <a class="btn secondary" href="https://sede.agenciatributaria.gob.es/static_files/Sede/Procedimiento_ayuda/G603/mod145_es_es.pdf" target="_blank" rel="noopener noreferrer">Download editable Modelo 145</a>
+          <p class="small-note">Once completed and signed, send it to HR.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap email-helper">
+      <div class="email-card">
+        <div>
+          <span class="eyebrow">Quick email</span>
+          <h2>Copy a template to write to People</h2>
+          <p>Fill in the blanks before sending it.</p>
+        </div>
+        <button class="btn primary" onclick="copyEmailTemplate()">Copy template</button>
+      </div>
+      <textarea id="emailTemplate" class="email-template" readonly>Hola People,
+
+Os informo del nacimiento de mi hijo/a el día __/__/____.
+
+Adjunto:
+- Documento del hospital que acredita el nacimiento.
+- Completed and signed leave request form.
+
+Las fechas de disfrute que solicito son:
+- Primer bloque obligatorio: del __/__/____ al __/__/____.
+- Semanas voluntarias, si procede: __________________________.
+
+Cuando tenga disponible el certificado de nacimiento del Registro Civil, os lo haré llegar.
+
+Gracias.</textarea>
+      <p id="copyStatus" class="copy-status"></p>
+    </section>
+
+    <section class="wrap faq" id="faq">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Quick questions</h2>
+      </div>
+
+      <div class="faq-grid">
+        <details><summary>Are the first 6 weeks mandatory?</summary><p>Yes. They must be taken immediately after the birth, uninterrupted and full-time.</p></details>
+        <details><summary>Can I split the voluntary weeks?</summary><p>Yes, the 11 voluntary weeks can be taken continuously or split into weekly periods until the child turns 12 months old.</p></details>
+        <details><summary>How much notice do I need to give?</summary><p>Each weekly period or accumulation of periods must be communicated to the company with at least 15 days’ notice.</p></details>
+        <details><summary>Who pays me during birth leave?</summary><p>During the contract suspension, the benefit is paid by the INSS. People will provide the company certificate so you can apply for it.</p></details>
+        <details><summary>And during breastfeeding leave?</summary><p>During breastfeeding leave, the INSS does not intervene. It is paid by the company.</p></details>
+        <details><summary>Can I take it part-time?</summary><p>Part-time use requires agreement between the company and the employee.</p></details>
+        <details><summary>What about the 2 additional legal weeks?</summary><p>They can be taken in weekly periods, together or separately, until the child turns 8.</p></details>
+        <details><summary>What if I want to organise it with People?</summary><p>Write to us and we will arrange a call to review dates, documentation and specific questions.</p></details>
+      </div>
+    </section>
+
+    <section class="wrap cta">
+      <h2>Questions? People is here for you 💙</h2>
+      <p>If you want to organise dates, confirm documentation or resolve a special case, write to us and we will review it with you.</p>
+      <a class="btn primary" href="mailto:people@plainconcepts.com">Contact People</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Family Leave Virtual Agent</strong>
+        <p>Internal information guide to support maternity, paternity, birth and childcare leave.</p>
+      </div>
+      <div class="footer-tags">
+        <span>People</span><span>Family</span><span>Leave</span><span>Work-life balance</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
