@@ -23,6 +23,7 @@
         <a href="#situacion">Situation</a>
         <a href="#permisos">Leave</a>
         <a href="#planner">Planner</a>
+        <a href="#especiales">Special cases</a>
         <a href="#pagos">Payments</a>
         <a href="#docs">Documents</a>
         <a href="#baby-benefits">Baby Benefits</a>
@@ -85,6 +86,7 @@
         <button onclick="showSituation('pagos')">💸 I want to know who pays me</button>
         <button onclick="showSituation('lactancia')">🍼 I want to request breastfeeding leave</button>
         <button onclick="showSituation('seguro')">🎁 I want to see Baby Benefits</button>
+        <button onclick="showSituation('especiales')">👶👶 My case is special</button>
         <button onclick="showSituation('vuelta')">🌱 I am preparing my return</button>
       </div>
 
@@ -142,7 +144,7 @@
           </div>
         </div>
         <div class="band-note">
-          This guide only includes the legally applicable weeks and does not include any additional company weeks beyond those provided by law.
+          This guide only includes the legally applicable weeks and does not include any additional company weeks beyond those provided by law. In special situations, such as single-parent families, adoption, guardianship, foster care or multiple birth/adoption, check the specific section and contact People to confirm the applicable calculation.
         </div>
       </div>
     </section>
@@ -166,6 +168,46 @@
         <div id="plannerResult" class="planner-result hidden"></div>
       </div>
     </section>
+    <section class="wrap special-cases" id="especiales">
+      <div class="section-head">
+        <span class="eyebrow">Special cases</span>
+        <h2>Single-parent families, adoption and multiple births</h2>
+        <p>
+          Some situations have specific rules or documentation. The planner is only an orientation for the standard case;
+          if your case falls under one of these situations, People will help you review the calculation and specific process.
+        </p>
+      </div>
+
+      <div class="special-grid">
+        <article class="special-card">
+          <div class="special-icon">👩‍👧</div>
+          <h3>Single-parent families</h3>
+          <p>
+            If you are forming a single-parent family, the leave duration may be longer. Let us know when you communicate the situation
+            so we can review how to organise the leave and the benefit with you.
+          </p>
+        </article>
+
+        <article class="special-card">
+          <div class="special-icon">🤝</div>
+          <h3>Adoption, guardianship or foster care</h3>
+          <p>
+            This guide also applies to adoption, guardianship for adoption or foster care. The reference date and documentation may vary,
+            so we will review what we need for your specific case.
+          </p>
+        </article>
+
+        <article class="special-card">
+          <div class="special-icon">👶👶</div>
+          <h3>Multiple birth, adoption or foster care</h3>
+          <p>
+            In the case of multiple birth, adoption, guardianship or foster care, the leave may be extended. Tell us from the start
+            so we can calculate the weeks and documentation correctly.
+          </p>
+        </article>
+      </div>
+    </section>
+
 
     <section class="wrap payments" id="pagos">
       <div class="section-head">
@@ -235,6 +277,7 @@
           <div>
             <h3>Company certificate</h3>
             <p>People will process and send the company certificate so you can apply for the benefit with Social Security.</p>
+            <p><a class="text-link" href="https://prestaciones.seg-social.es/servicio/prestacion-nacimiento-adopcion-cuidado-menor.html" target="_blank" rel="noopener noreferrer">Go to the Social Security page to apply for the benefit</a>.</p>
           </div>
         </div>
         <div class="flow-item">
@@ -253,11 +296,16 @@
         <h2>Documentation we need</h2>
       </div>
 
+      <div class="docs-callout">
+        <strong>Benefit application:</strong> once you have the documentation and the company certificate, you can apply for the benefit on the Social Security website.
+        <a class="btn secondary" href="https://prestaciones.seg-social.es/servicio/prestacion-nacimiento-adopcion-cuidado-menor.html" target="_blank" rel="noopener noreferrer">Apply on Social Security website</a>
+      </div>
+
       <div class="checklist">
-        <label><input type="checkbox"> Hospital document certifying the birth.</label>
+        <label><input type="checkbox"> Hospital document certifying the birth, or equivalent resolution/documentation in case of adoption, guardianship or foster care.</label>
         <label><input type="checkbox"> Completed and signed leave request form.</label>
         <label><input type="checkbox"> Leave dates indicated in the request.</label>
-        <label><input type="checkbox"> Civil Registry birth certificate when issued.</label>
+        <label><input type="checkbox"> Civil Registry birth certificate when issued, or equivalent official documentation depending on the case.</label>
         <label><input type="checkbox"> Later request for remaining weeks, if taken in split periods.</label>
         <label><input type="checkbox"> Updated Modelo 145 including the new child, where applicable.</label>
       </div>

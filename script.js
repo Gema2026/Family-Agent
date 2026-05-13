@@ -40,6 +40,10 @@ const copy = {
         title: "🎁 Quiero ver Baby Benefits",
         text: "En Baby Benefits encontrarás el Baby Basket, el alta del bebé en el seguro de salud, la retribución flexible de Cobee para guardería y el modelo 145 para actualizar tu situación familiar."
       },
+      especiales: {
+        title: "👶👶 Mi caso es especial",
+        text: "Si se trata de una familia monoparental, adopción, guarda con fines de adopción, acogimiento o nacimiento/adopción múltiple, revisaremos contigo el cálculo y la documentación específica. La calculadora es orientativa para el caso general."
+      },
       vuelta: {
         title: "🌱 Estoy preparando la vuelta",
         text: "Si tienes vacaciones pendientes o quieres organizar tu reincorporación, coordínalo con tu manager y People para revisar fechas, lactancia y cualquier necesidad de acompañamiento."
@@ -82,6 +86,10 @@ const copy = {
       seguro: {
         title: "🎁 I want to see Baby Benefits",
         text: "In Baby Benefits you will find the Baby Basket, adding the baby to health insurance, Cobee flexible compensation for nursery expenses and Modelo 145 to update your family situation."
+      },
+      especiales: {
+        title: "👶👶 My case is special",
+        text: "If this is a single-parent family, adoption, guardianship for adoption, foster care or multiple birth/adoption, we will review the specific calculation and documentation with you. The planner is only an orientation for the standard case."
       },
       vuelta: {
         title: "🌱 I am preparing my return",
